@@ -1,12 +1,18 @@
 * {
     font-family: 'Montserrat';
 }
+
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    /* background:  url("../../public/assets/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat; */
 }
 
 .container .title {
@@ -32,48 +38,62 @@
     margin-top: 20px;
 
 }
-.container .cv:hover{
+
+.container .cv:hover {
     border: solid 1px rgb(255, 255, 255);
     color: #000000 !important;
 }
+
 .container .avatar img {
-    width: 200px;
+    width: 130px;
     border-radius: 50% !important;
+    border: 2px solid #202124;
 }
 
 .container .desc {
     text-align: center;
     width: 400px;
+    line-height: 2;
+    font-style: italic;
 }
-.media{
+
+.media {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
 }
-.media a img{
-width: 30px;
+
+.media a img {
+    width: 30px;
 }
+
+#link {
+    background: white;
+    border-image: none;
+    border-radius: 3px;
+}
+
 .toggle-container {
     display: flex;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  .toggle-label {
+}
+
+.toggle-label {
     margin-right: 8px;
-  }
-  
-  .toggle-switch {
+}
+
+.toggle-switch {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 20px;
     background-color: #ccc;
     border-radius: 10px;
-  }
-  
-  .toggle-slider {
+}
+
+.toggle-slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -83,9 +103,9 @@ width: 30px;
     background-color: #000000;
     border-radius: 10px;
     transition: 0.4s;
-  }
-  
-  .toggle-slider:before {
+}
+
+.toggle-slider:before {
     position: absolute;
     content: "";
     height: 16px;
@@ -95,13 +115,13 @@ width: 30px;
     background-color: white;
     border-radius: 50%;
     transition: 0.4s;
-  }
-  
-  input:checked + .toggle-slider {
+}
+
+input:checked+.toggle-slider {
     background-color: blueviolet;
     /* background: linear-gradient(45deg, blueviolet, #ff1493a1); */
-  }
-  
-  input:checked + .toggle-slider:before {
+}
+
+input:checked+.toggle-slider:before {
     transform: translateX(20px);
-  }
+}
