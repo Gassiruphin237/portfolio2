@@ -9,10 +9,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background:  url("../../public/assets/bg.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat; */
 }
 
 .container .title {
@@ -55,6 +51,7 @@
     width: 400px;
     line-height: 2;
     font-style: italic;
+    font-size: 12px;
 }
 
 .media {
@@ -124,4 +121,20 @@ input:checked+.toggle-slider {
 
 input:checked+.toggle-slider:before {
     transform: translateX(20px);
+}
+@media only screen and (max-width: 768px) {
+    /* Styles à appliquer pour les dispositifs mobiles */
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Styles à appliquer pour les ordinateurs de bureau */
+    .container {
+        
+    }
 }
